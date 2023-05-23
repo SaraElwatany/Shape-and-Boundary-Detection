@@ -34,17 +34,14 @@ FORMS += \
 
 
 
-
-
-##INCLUDEPATH += D:\OpenCV\opencv\release\lib
-##LIBS += D:\OpenCV\opencv\release\bin -libopencv_calib3d470 -lopencv_core470.dll -lopencv_imgproc470.dll -lopencv_imgcodecs470.dll -lopencv_video470.dll -lopencv_videoio470.dll -lopencv_dnn470.dll
-
-
-
 ## Default rules for deployment.
-#qnx: target.path = /tmp/$${TARGET}/bin
-#else: unix:!android: target.path = /opt/$${TARGET}/bin
-#!isEmpty(target.path): INSTALLS += target
+qnx: target.path = /tmp/$${TARGET}/bin
+else: unix:!android: target.path = /opt/$${TARGET}/bin
+!isEmpty(target.path): INSTALLS += target
+
+
+INCLUDEPATH += D:\Libraries\OpenCV\opencv\release\install\include
+
 
 
 win32: LIBS += -LD:/Libraries/OpenCV/opencv/release/lib/ -llibopencv_calib3d470.dll
