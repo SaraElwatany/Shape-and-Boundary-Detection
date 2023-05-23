@@ -1,6 +1,6 @@
-# A02-Team01
-
 # Shape Detection & Object Contouring
+
+# Abstract
 The above repository includes our work from the previous tasks (Noising Image, Denoising Image with several types of filters, Edge Detection, Image Normalization, Image Equalization, Histogram plotting, Cumulative Curve plotting, Low & High pass frequency domain filters, Hybrid Images)
 ## Previous files
 - Filters.h
